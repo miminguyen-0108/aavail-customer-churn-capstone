@@ -1,0 +1,4 @@
+model,cv_roc_auc_mean,cv_roc_auc_std
+logistic_regression,0.7495970217677831,0.032724265985500794
+random_forest,0.7144004010788311,0.03017987019834119
+baseline_majority,0.5,0.0

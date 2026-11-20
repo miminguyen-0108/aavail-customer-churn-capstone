@@ -1,0 +1,61 @@
+{
+  "source_customer_rows": 1000,
+  "source_stream_rows": 18859,
+  "source_customer_columns": 6,
+  "source_stream_columns": 5,
+  "source_customer_nulls": {
+    "customer_id": 0,
+    "country_name": 0,
+    "age": 0,
+    "is_subscriber": 0,
+    "subscriber_type": 0,
+    "num_streams": 0
+  },
+  "source_stream_nulls": {
+    "customer_id": 0,
+    "stream_id": 1164,
+    "date": 0,
+    "invoice_item_id": 0,
+    "subscription_stopped": 0
+  },
+  "missing_stream_id_imputed": 1164,
+  "stream_id_imputation": "sentinel -1 + stream_id_was_missing flag (unknown identifier)",
+  "stream_events_dropped": 0,
+  "source_columns_dropped_in_ingestion": [],
+  "privacy_columns_excluded_before_publication": [
+    "customer_name"
+  ],
+  "model_columns_excluded_to_prevent_leakage": [
+    "customer_id",
+    "is_subscriber",
+    "churned",
+    "stream_id",
+    "subscription_stopped"
+  ],
+  "final_customer_rows": 1000,
+  "final_stream_rows": 18859,
+  "remaining_nulls_customer_features": {
+    "customer_id": 0,
+    "country_name": 0,
+    "age": 0,
+    "is_subscriber": 0,
+    "subscriber_type": 0,
+    "num_streams": 0,
+    "stream_events": 0,
+    "unknown_stream_id_events": 0,
+    "unknown_stream_id_rate": 0,
+    "churned": 0
+  },
+  "remaining_nulls_imputed_streams": {
+    "customer_id": 0,
+    "stream_id": 0,
+    "date": 0,
+    "invoice_item_id": 0,
+    "subscription_stopped": 0,
+    "stream_id_was_missing": 0
+  },
+  "countries": {
+    "united_states": 700,
+    "singapore": 300
+  }
+}
